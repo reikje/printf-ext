@@ -17,6 +17,8 @@ trait UnsignedNumericConversion extends SupportedStringConversion {
     } else {
       x
     }
-    out.toString
+    asString(out)
   }
+
+  protected def asString(value: BigInteger): String = value.toString
 }
