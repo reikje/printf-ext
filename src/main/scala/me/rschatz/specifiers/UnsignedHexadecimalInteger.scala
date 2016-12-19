@@ -11,7 +11,7 @@ object UnsignedHexadecimalInteger extends UnsignedNumericConversion {
   override protected val complement: BigInteger = BigInteger.ONE.shiftLeft(32)
 
   /**
-    * Returns '''%u'''.
+    * Returns '''%x'''.
     *
     * @return String
     */
