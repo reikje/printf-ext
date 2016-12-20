@@ -1,11 +1,14 @@
-package me.rschatz
+package com.github.reikje
 
-import java.math.BigInteger
-
-import me.rschatz.specifiers._
+import com.github.reikje.specifiers._
 
 import scala.collection.mutable
 
+/**
+  * [[com.github.reikje.PrintfStringOps]] adds a new method '''formatx''' to the String class via implicit conversions.
+  *
+  * @author rschatz
+  */
 object PrintfStringOps {
   private val pattern = "\\%[\\w]+".r
 

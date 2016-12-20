@@ -5,7 +5,7 @@ Adds support for additional printf specifiers in Scala.
 
 printf-ext adds a new function `formatx` to  the `String`. Anywhere where you want to call it, you need to
 have the implicit conversion `AdditionalSpecifiers` in scope. For instance you could add this line to your
-package object: `me.rschatz.specifiers.PrintfStringOps._`
+package object: `com.github.reikje.specifiers.PrintfStringOps._`
 
 ## Specifiers
 

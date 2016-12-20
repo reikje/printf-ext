@@ -1,9 +1,9 @@
-package me.rschatz
+package com.github.reikje
 
 import java.util.UnknownFormatConversionException
 
+import com.github.reikje.PrintfStringOps._
 import org.scalatest.{Matchers, WordSpec}
-import PrintfStringOps._
 
 class PrintfStringOpsSpec extends WordSpec with Matchers {
   "PrintfStringOps" should {

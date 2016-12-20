@@ -1,4 +1,4 @@
-package me.rschatz.specifiers
+package com.github.reikje.specifiers
 
 trait SupportedStringConversion {
   /**
