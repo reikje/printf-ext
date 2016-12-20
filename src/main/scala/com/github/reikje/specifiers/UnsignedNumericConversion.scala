@@ -20,7 +20,7 @@ trait UnsignedNumericConversion extends SupportedStringConversion {
         x
       }
       asString(out)
-    }.getOrElse(throw new IllegalArgumentException(s"Cannot format $value using $specifier"))
+    }.getOrElse(throw new IllegalArgumentException(s"Cannot format '$value' using $specifier"))
   }
 
   protected def asString(value: BigInteger): String = value.toString
