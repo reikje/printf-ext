@@ -10,6 +10,8 @@ import java.math.BigInteger
 object PointerAddress extends UnsignedNumericConversion {
   override protected val complement: BigInteger = BigInteger.ONE.shiftLeft(64)
 
+  private lazy val pad = "0000000000000000"
+
   /**
     * Returns '''%p'''.
     *
@@ -17,5 +19,8 @@ object PointerAddress extends UnsignedNumericConversion {
     */
   override val specifier: String = "%p"
 
-  override protected def asString(value: BigInteger): String = s"0x${value.toString(16)}"
+  override protected def asString(value: BigInteger): String = {
+    val converted = s"${value.toString(16)}"
+    pad.substring(converted.length) + converted
+  }
 }

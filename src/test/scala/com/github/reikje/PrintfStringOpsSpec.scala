@@ -17,7 +17,7 @@ class PrintfStringOpsSpec extends WordSpec with Matchers {
     }
 
     "support %u, %p, %x, %llu" in {
-      "A %s brown fox jumps %u+%llu times over a lazy dog at %x (%p)".formatx("quick", 10, 2000L, 4, 4) shouldBe "A quick brown fox jumps 10+2000 times over a lazy dog at 4 (0x4)"
+      "A %s brown fox jumps %u+%llu times over a lazy dog at %x (0x%p)".formatx("quick", 10, 2000L, 4, 4) shouldBe "A quick brown fox jumps 10+2000 times over a lazy dog at 4 (0x0000000000000004)"
     }
 
     "retain the original specifier if not enough arguments are given" in {
