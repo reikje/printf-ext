@@ -11,7 +11,7 @@ package object: `com.github.reikje.specifiers.PrintfStringOps._`
 
 The following specifiers are now supported on top of what the regular `format` function can do.
 
-| Abbreviation    | Type                                            | Exampletion                                    |
+| Abbreviation    | Type                                            | Example                                        |
 | --------------- |:-----------------------------------------------:| ----------------------------------------------:|
 | `%u`            | `unsigned 32-bit numeric`                       | `"%u".formatx(-1) // "4294967295"`             |
 | `%llu`          | `unsigned 64-bit numeric`                       | `"%llu".formatx(-1) // "18446744073709551615"` |
