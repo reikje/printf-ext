@@ -3,12 +3,13 @@ lazy val root =
     .settings(
       organization := "com.github.reikje",
       name := "printf-ext",
-      version := "1.0.0",
-      scalaVersion := "2.11.8",
+      version := "1.0.1",
+      scalaVersion := "2.12.3",
+      crossScalaVersions := Seq("2.11.11"),
       description := "Extended printf support for Scala",
       libraryDependencies ++= Seq(
       ) ++ Seq(
-        "org.scalatest" %% "scalatest" % "2.2.6"
+        "org.scalatest" %% "scalatest" % "3.0.4"
       ),
       pomExtra in Global := {
         <url>(your project URL)</url>
